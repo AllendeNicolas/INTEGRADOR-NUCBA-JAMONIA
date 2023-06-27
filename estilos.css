@@ -1,0 +1,777 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* NAV BAR */
+
+header {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  box-shadow: 0 8px 24px rgba(44, 220, 243, 0.4);
+  background-color: rgb(41, 41, 46);
+  position: fixed;
+  width: 95%;
+}
+
+.navbar ul {
+  margin-top: 15px;
+  list-style-type: none;
+  display: flex;
+  gap: 100px;
+}
+
+.navbar {
+  display: flex;
+}
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+.menu-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#carro-toggle,
+.carro-label {
+  /* display: none; */
+}
+
+.carro-icon {
+  width: 80px;
+  height: 50px;
+}
+
+/* LOGO JAMONIA */
+
+.LOGO {
+  display: flex;
+  margin-top: 150px;
+  padding-left: 10px;
+  height: 250%;
+  border-radius: 200px;
+  box-shadow: 0px 5px 40px #3f86af;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color:rgb(207, 196, 181);
+  font-weight: 500;
+}
+
+body{
+  background-image: linear-gradient(#000000, #0F0F4D);
+}
+
+/* MAIN Y SECCIONES */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: bisque;
+  width: 100%;
+}
+
+/* PRIMERA SECCION */
+
+#tarjeta {
+  margin-top: 100px;
+  padding: 50px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-info{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.tarjeta-info h1 {
+  font-size: 70px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color:rgb(217, 196, 196)
+}
+
+.tarjeta-info h2{
+  font-size: 35px;
+  width: 60%;
+  min-width: 500px;
+  font-weight: 200;
+  color:rgb(137, 112, 112)
+}
+
+.tarjeta-info p {
+  font-size: 30px;
+  width: 85%;
+  color: grey;
+}
+
+.tarjeta-info-boton {
+  display: flex;
+  gap: 30px;
+}
+
+.tarjeta-info-boton a {
+  color: blanchedalmond;
+  background-image: linear-gradient(#0c699f, #0d6692);
+  width: 200px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(44, 220, 243, 0.4);
+}
+
+/* CONTENDOR IMAGEN JAMONIA */
+
+.tarjeta-contenedor {
+  width: 400px;
+  background: #0e6191;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 20px 100px rgba(218, 230, 230, 0.4);
+}
+
+.tarjeta-presentacion {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-presentacion img {
+  border-radius: 10px;
+}
+
+.tarjeta-presentacion-titulo {
+  text-align: center;
+  justify-content: center;
+}
+
+/* SECCIÓN 2 - PRODUCTOS */
+
+#nuestrosproductos,
+#especialidades-fraccionados,
+#especialidades-serranos {
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#nuestrosproductos h2,
+#especialidades-fraccionados h2,
+#especialidades-serranos h2 {
+  margin-right: 0px;
+  font-size: 30px;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.especialidades-salame h3,
+.especialidades-bondiola h3,
+.especialidades-jamoncrudo h3,
+.especialidades-conservas h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.especialidades-salame,
+.especialidades-bondiola,
+.especialidades-jamoncrudo,
+.especialidades-conservas {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.especialidades-card-salame,
+.especialidades-card-bondiola,
+.especialidades-card-crudo,
+.especialidades-card-conservas {
+  background-image: linear-gradient(#1571a7, #0a5885);
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 100px rgb(48, 90, 119);
+}
+
+.especialidades-card-salame img,
+.especialidades-card-bondiola img,
+.especialidades-card-crudo img,
+.especialidades-card-conservas img {
+  max-width: 300px;
+  border-radius: 0.8rem;
+}
+
+
+.especialidades {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  width: 200%;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  margin-right: 180px;
+}
+
+/* ESPECILIDADES QUESOS */
+
+.especialidades-quesos h3 {
+  margin-right: 0px;
+  font-size: 30px;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.especialidades-quesos {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.especialidades-quesos {
+  background-image: linear-gradient(#1571a7, #0a5885);
+  padding: 0.5rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 100px rgb(48, 90, 119);
+  margin-bottom: 50px;
+}
+
+.especialidades-card-quesos img {
+  max-width: 1200px;
+  border-radius: 0.8rem;
+}
+
+.especialidades-quesos p {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* ESPECIALIDADES FRACCIONADOS AL VACÍO */
+
+#especialidades-fraccionados h2{
+  margin-bottom: 110px;
+}
+
+.fraccionados-bondiola h3,
+.fraccionados-lomito h3,
+.fraccionados-conitos h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.fraccionados-bondiola,
+.fraccionados-lomito,
+.fraccionados-conitos {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fraccionados-card-bondiola,
+.fraccionados-card-lomito,
+.fraccionados-card-conitos {
+  background-image: linear-gradient(#1571a7, #0a5885);
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 100px rgb(48, 90, 119);
+}
+
+.fraccionados-card-bondiola img,
+.fraccionados-card-lomito img,
+.fraccionados-card-conitos img {
+  max-width: 300px;
+  border-radius: 0.8rem;
+}
+
+.fraccionados {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+  width: 200%;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+/* ESPECIALIDADES SERRANAS */
+
+#especialidades-serranos h2 {
+  width: 1000px;
+  margin-bottom: 130px;
+}
+
+.serrranos-bondiola h3,
+.serranos-lomito h3,
+.serranos-patacrudo h3 {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.serranos-bondiola,
+.serranos-lomito,
+.serranos-patacrudo {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.serranos-card-bondiola,
+.serranos-card-lomito,
+.serranos-card-patacrudo {
+  background-image: linear-gradient(#1571a7, #0a5885);
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 100px rgb(48, 90, 119);
+}
+
+.serranos-card-bondiola img,
+.serranos-card-lomito img,
+.serranos-card-patacrudo img {
+  max-width: 300px;
+  border-radius: 0.8rem;
+}
+
+.fraccionados-serranos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 60px;
+  width: 200%;
+  padding-top: 15px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  }
+
+  /* TERCERA SECCION PROMOCIONES */
+
+#promociones {
+  margin-top: 5px;
+  padding: 10px 0;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#promociones h2{
+    font-size: 70px;
+    width: 100%;
+    min-width: 800px;
+    font-weight: 800;
+    color:rgb(137, 194, 217) 
+}
+
+#promociones h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.promos-jamonia{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.promos-jamonia-cartel {
+  width: 400px;
+  background:#af8c20;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 20px 100px rgba(218, 230, 230, 0.4);
+}
+
+.promos-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  margin-left: 100px;
+}
+
+
+.promos-info h3 {
+  font-size: 30px;
+  width: 50%;
+  min-width: 500px;
+  font-weight: 500;
+  color:rgb(217, 196, 196)
+}
+
+.promos-info p {
+  font-size: 20px;
+  width: 100%;
+  color: grey;
+}
+.promos-info ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+/* PROMOCIONES CARD */
+
+.promos-info-tabla,
+.promos-info-box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 325px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;;
+}
+
+.tabla-card,
+.box-card {
+  background-image: linear-gradient(#af8c20, #a38325);
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 20px 25px rgb(78, 92, 49);
+}
+
+.tabla-card img,
+.box-card img {
+  width: 300;
+  height: 200px;
+  border-radius: 0.8rem;
+}
+
+.tabla-card,
+.box-card p {
+  display: flex;
+  margin: 10px 10px;
+}
+
+.tabla-card a,
+.box-card a {
+  color: blanchedalmond;
+  background-color: #A63446;
+  width: 100px;
+  padding: 5px 0px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.tabla-card p,
+.box-card p {
+  font-weight: 600;
+}
+
+/*CUARTA SECCION CONSULTAS Y PEDIDOS */
+
+#consultas{ 
+margin-top: 40px;
+padding: 10px 0;
+max-width: 85%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+#consultas h2{
+  font-size: 40px;
+  width: 100%;
+  min-width: 800px;
+  font-weight: 800;
+  color:rgb(248, 250, 251) 
+}
+
+#consultas h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.consultas-pedidos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.consultas-cartel {
+  width: 300px;
+  background:#1a86b1;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 20px 100px rgba(218, 230, 230, 0.4);
+}
+
+.consultas-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin-left: 80px;
+}
+
+.consultas-info p {
+  font-size: 25px;
+  width: 80%;
+  color: rgb(199, 195, 195);
+}
+
+.consultas-boton a{
+  color: rgb(241, 234, 224);
+  background-image: linear-gradient(#0c699f, #0d6692);
+  width: 200px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(44, 220, 243, 0.4);
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+/* FOOTER - PIE DE PAGINA */
+#piedepagina {
+  width: 100%;
+  background: #050d3e;
+  color: rgb(28, 173, 218);
+  margin-top: 50px;
+}
+
+#piedepagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.piecontenedor {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin: 50px;
+}
+
+.pie-info h3,
+.pie-ubicacion h3,
+.pie-contactos h3 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+.pie-info p,
+.pie-ubicacion p,
+.pie-contactos p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.ubicacion-mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #0a5885;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 6px 0px 10px 10px rgb(51, 108, 132);
+}
+
+.pie-ubicacion iframe {
+  height: 220px;
+  width: 280px;
+  border-radius: 15px;
+}
+
+.pie-contactos {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pie-contactos a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: antiquewhite;
+  margin-right: 10px;
+  background-image: linear-gradient(#025578, #0a156e);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px #0e6191;
+}
+
+.piecontenedor-cierre {
+  width: 100%;
+  background:  rgb(8, 8, 74);
+  color: rgb(156, 148, 133);
+}
+
+/* QUINTA SECCION-CONOCENOS  */
+
+#conocenos {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#conocenos h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  color: rgb(230, 176, 176);
+}
+
+#conocenos p{
+  font-size: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:#3f86af;
+}
+
+/* MENU HAMBURGUESA */
+.
+/* MENU CARRITO */
+
+/* .cart {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  padding: 50px 30px;
+  border-left: 1px solid rgb(35, 35, 83);
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  display: none;
+  z-index: 2;
+}
+
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.cart h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+
+#carro-toggle :checked + .cart {
+  display: flex;
+}
+
+.img-prod {
+  height: 10%;
+  width: 10%;
+} */

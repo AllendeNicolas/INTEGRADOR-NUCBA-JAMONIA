@@ -1,0 +1,112 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Prompt:wght@300&family=Vina+Sans&display=swap');
+</style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(asets.consultas/imgconsultas.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 200;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 50px 500px;
+  }
+
+h1{
+  font-size: 40px;
+  font-weight: 800;
+  color: #3bbbf6;
+  text-align: center;
+   
+}
+
+.contenedor {
+    width: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) ;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.contenedor h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.contenedor .input-box {
+    position: relative;
+    width: 97%;
+    height: 50px;
+    margin: 50px 0;
+}
+
+
+.contenedor .input-box {
+  position: relative;
+  width: 97%;
+  height: 50px;
+  margin: 50px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: aliceblue;
+  padding: 5px 0px 5px 20px;
+}
+
+.input-box input::placeholder {
+  color: #f5f2f2;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+button {
+  border-radius: 15px;
+  background: #306c8b;
+  box-shadow: #f6f7f8;
+}
+
+button input {
+  background-color: #3bbbf6;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  text-decoration: none;
+
+}
+
+

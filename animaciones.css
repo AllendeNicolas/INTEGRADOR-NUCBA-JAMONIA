@@ -1,0 +1,42 @@
+/* scroll behavior smooth */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Hover elementos Nav */
+.navbar-list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-list li a::after {
+  content: "";
+  height: 2px;
+  width: 100;
+  background: rgb(233, 229, 237);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+/* Hover Botones Registrate-Iniciar Sesion-Conusltas */
+
+.tarjeta-info a,
+.consultas-pedidos a {
+  transition: all 0.2s ease-out;
+}
+
+.tarjeta-info a :hover,
+.consultas-pedidos a :hover {
+  background-color: orange;
+  transition: all 0.2s ease-in;
+}
