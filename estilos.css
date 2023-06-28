@@ -782,6 +782,7 @@ main {
 .cart-itmes img {
   width: 140px;
   height: 170px;
+  border-radius: 5px;
 }
 
 .cart-itmes {
@@ -793,11 +794,6 @@ main {
   padding: 20px;
   border: 1px solid #0d6692;
   border-radius: 10px;
-}
-
-.cart-item img {
-  height: 65px;
-  width: 65px;
 }
 
 .item-info {
@@ -870,12 +866,13 @@ main {
 .cart-total p {
   color: wheat;
   font-weight: 700;
+  font-size: 30px;
 }
 
 .cart-total span {
   color: #1a86b1;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 /*Toggle del carro*/
