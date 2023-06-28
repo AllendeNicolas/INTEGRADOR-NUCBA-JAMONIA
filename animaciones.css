@@ -5,12 +5,12 @@ html {
 }
 
 /* Hover elementos Nav */
-.navbar-list li {
+.navbar-link li {
   position: relative;
   padding: 0;
 }
 
-.navbar-list li a::after {
+.navbar-link li a ::after {
   content: "";
   height: 2px;
   width: 100;
@@ -20,23 +20,93 @@ html {
   left: 0;
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.15s ease;
+  transition: transform 0.5s ease;
 }
 
-.navbar-list li a:hover::after {
+.navbar-link li a:hover::after {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
 
 /* Hover Botones Registrate-Iniciar Sesion-Conusltas */
 
-.tarjeta-info a,
-.consultas-pedidos a {
-  transition: all 0.2s ease-out;
+.tarjeta-info-boton a,
+.consultas-info a {
+  transition: all 0.9s ease-out;
 }
 
-.tarjeta-info a :hover,
-.consultas-pedidos a :hover {
+.tarjeta-info-boton a :hover,
+.consultas-info a :hover {
   background-color: orange;
-  transition: all 0.2s ease-in;
+  transition: all 0.9s ease-in;
+}
+
+.overlay {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: none;
+}
+
+/* toggle para overlay */
+
+#carro-toggle:checked ~ .overlay {
+  display: block;
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slid-rigth {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ANIMACION h1-h2-p */
+
+.tarjeta-info h1,
+.tarjeta-info h2,
+.tarjeta-info p {
+  animation: fade 1s ease-in, slide-up 4.3s ease-in-out;
+}
+
+/* ANIMACION BOTONES*/
+.tarjeta-info-boton {
+  animation: fade 8s ease-in, slide-up 5.3s ease-in-out;
+}
+
+/* ANIMACION TARJETA JAMONIA */
+.tarjeta-contenedor {
+  animation: fade 5s ease-in, slide-up 5.3s ease-in-out;
 }

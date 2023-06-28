@@ -41,10 +41,10 @@ header {
   height: 50px;
 }
 
-#carro-toggle,
+/* #carro-toggle,
 .carro-label {
-  /* display: none; */
-}
+  display: none;
+} */
 
 .carro-icon {
   width: 80px;
@@ -64,12 +64,12 @@ header {
 
 .navbar-link {
   text-decoration: none;
-  color:rgb(207, 196, 181);
+  color: rgb(207, 196, 181);
   font-weight: 500;
 }
 
-body{
-  background-image: linear-gradient(#000000, #0F0F4D);
+body {
+  background-image: linear-gradient(#000000, #0f0f4d);
 }
 
 /* MAIN Y SECCIONES */
@@ -94,7 +94,7 @@ main {
   align-items: center;
 }
 
-.tarjeta-info{
+.tarjeta-info {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -107,15 +107,15 @@ main {
   width: 80%;
   min-width: 500px;
   font-weight: 800;
-  color:rgb(217, 196, 196)
+  color: rgb(217, 196, 196);
 }
 
-.tarjeta-info h2{
+.tarjeta-info h2 {
   font-size: 35px;
   width: 60%;
   min-width: 500px;
   font-weight: 200;
-  color:rgb(137, 112, 112)
+  color: rgb(137, 112, 112);
 }
 
 .tarjeta-info p {
@@ -242,7 +242,6 @@ main {
   border-radius: 0.8rem;
 }
 
-
 .especialidades {
   display: flex;
   flex-direction: row;
@@ -301,7 +300,7 @@ main {
 
 /* ESPECIALIDADES FRACCIONADOS AL VACÍO */
 
-#especialidades-fraccionados h2{
+#especialidades-fraccionados h2 {
   margin-bottom: 110px;
 }
 
@@ -421,9 +420,9 @@ main {
   padding-top: 15px;
   padding-bottom: 100px;
   margin-bottom: 50px;
-  }
+}
 
-  /* TERCERA SECCION PROMOCIONES */
+/* TERCERA SECCION PROMOCIONES */
 
 #promociones {
   margin-top: 5px;
@@ -435,12 +434,12 @@ main {
   flex-direction: column;
 }
 
-#promociones h2{
-    font-size: 70px;
-    width: 100%;
-    min-width: 800px;
-    font-weight: 800;
-    color:rgb(137, 194, 217) 
+#promociones h2 {
+  font-size: 70px;
+  width: 100%;
+  min-width: 800px;
+  font-weight: 800;
+  color: rgb(137, 194, 217);
 }
 
 #promociones h2 {
@@ -449,7 +448,7 @@ main {
   text-align: center;
 }
 
-.promos-jamonia{
+.promos-jamonia {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -459,7 +458,7 @@ main {
 
 .promos-jamonia-cartel {
   width: 400px;
-  background:#af8c20;
+  background: #af8c20;
   padding: 20px;
   border-radius: 15px;
   display: flex;
@@ -477,13 +476,12 @@ main {
   margin-left: 100px;
 }
 
-
 .promos-info h3 {
   font-size: 30px;
   width: 50%;
   min-width: 500px;
   font-weight: 500;
-  color:rgb(217, 196, 196)
+  color: rgb(217, 196, 196);
 }
 
 .promos-info p {
@@ -491,7 +489,7 @@ main {
   width: 100%;
   color: grey;
 }
-.promos-info ul{
+.promos-info ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -508,7 +506,7 @@ main {
   height: 325px;
   justify-content: center;
   align-items: center;
-  cursor: pointer;;
+  cursor: pointer;
 }
 
 .tabla-card,
@@ -541,7 +539,7 @@ main {
 .tabla-card a,
 .box-card a {
   color: blanchedalmond;
-  background-color: #A63446;
+  background-color: #a63446;
   width: 100px;
   padding: 5px 0px;
   border-radius: 8px;
@@ -556,22 +554,22 @@ main {
 
 /*CUARTA SECCION CONSULTAS Y PEDIDOS */
 
-#consultas{ 
-margin-top: 40px;
-padding: 10px 0;
-max-width: 85%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+#consultas {
+  margin-top: 40px;
+  padding: 10px 0;
+  max-width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#consultas h2{
+#consultas h2 {
   font-size: 40px;
   width: 100%;
   min-width: 800px;
   font-weight: 800;
-  color:rgb(248, 250, 251) 
+  color: rgb(248, 250, 251);
 }
 
 #consultas h2 {
@@ -591,7 +589,7 @@ flex-direction: column;
 
 .consultas-cartel {
   width: 300px;
-  background:#1a86b1;
+  background: #1a86b1;
   padding: 20px;
   border-radius: 15px;
   display: flex;
@@ -615,7 +613,7 @@ flex-direction: column;
   color: rgb(199, 195, 195);
 }
 
-.consultas-boton a{
+.consultas-boton a {
   color: rgb(241, 234, 224);
   background-image: linear-gradient(#0c699f, #0d6692);
   width: 200px;
@@ -709,7 +707,7 @@ flex-direction: column;
 
 .piecontenedor-cierre {
   width: 100%;
-  background:  rgb(8, 8, 74);
+  background: rgb(8, 8, 74);
   color: rgb(156, 148, 133);
 }
 
@@ -728,33 +726,35 @@ flex-direction: column;
 #conocenos h2 {
   font-size: 30px;
   font-weight: 700;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-bottom: 30px;
   color: rgb(230, 176, 176);
 }
 
-#conocenos p{
+#conocenos p {
   font-size: 25px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:#3f86af;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #3f86af;
 }
 
 /* MENU HAMBURGUESA */
-.
-/* MENU CARRITO */
 
-/* .cart {
+/* MENU CARRITO */
+.cart {
   position: absolute;
-  top: 65px;
+  top: 85px;
   right: 0;
-  padding: 50px 30px;
-  border-left: 1px solid rgb(35, 35, 83);
+  padding: 35px 30px;
+  border-left: 3px solid #3f86af;
+  display: flex;
   flex-direction: column;
   gap: 30px;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 85px);
   overflow-y: scroll;
   display: none;
   z-index: 2;
+  background: linear-gradient(to top, #000000, #0f0f4d);
 }
 
 .cart::-webkit-scrollbar {
@@ -762,16 +762,124 @@ flex-direction: column;
 }
 
 .cart h2 {
+  color: #ecf0f2;
   font-size: 20px;
   font-weight: 600;
-  color: red;
 }
 
-#carro-toggle :checked + .cart {
+#carro-toggle {
+  display: none;
+}
+
+#carro-toggle:checked + .cart {
   display: flex;
 }
 
-.img-prod {
-  height: 10%;
-  width: 10%;
-} */
+.cart {
+  color: blanchedalmond;
+}
+
+.cart-itmes img {
+  width: 140px;
+  height: 170px;
+}
+
+.cart-itmes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #2323234e;
+  padding: 20px;
+  border: 1px solid #0d6692;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  height: 65px;
+  width: 65px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-tytle {
+  color: wheat;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.item-bid {
+  color: whitesmoke;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.item-precio {
+  background: linear-gradient(to right, #218ecd, #bb5060);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.item-handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quantity-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: wheat;
+  font-weight: 400;
+}
+
+.item-quantity {
+  font-size: 20px;
+  color: rgb(224, 105, 200);
+}
+
+.quantity-handler-up {
+  border: 2px solid #1a86b1;
+}
+
+.quantity-handler-down {
+  border: 2px solid #0d6692;
+}
+
+.divider {
+  margin-top: 20px;
+  border: 0.5px solid #0a5885;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cart-total p {
+  color: wheat;
+  font-weight: 700;
+}
+
+.cart-total span {
+  color: #1a86b1;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*Toggle del carro*/
+#carro-toggle:checked + .cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
