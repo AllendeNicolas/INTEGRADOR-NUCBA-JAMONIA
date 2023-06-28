@@ -109,4 +109,27 @@ button input {
 
 }
 
+.volver-pagina {
+  width: 25%;
+  height: 100%;
+  background: #1270a0;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.volver-pagina a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: beige;
+}
+
+.volver-pagina a:hover{
+  text-decoration: underline;
+}
+
 
