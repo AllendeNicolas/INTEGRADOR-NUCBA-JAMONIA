@@ -5,12 +5,12 @@ html {
 }
 
 /* Hover elementos Nav */
-.navbar-link li {
+.navbar-list ul {
   position: relative;
   padding: 0;
 }
 
-.navbar-link li a ::after {
+.navbar-list li a ::after {
   content: "";
   height: 2px;
   width: 100;
@@ -23,7 +23,7 @@ html {
   transition: transform 0.5s ease;
 }
 
-.navbar-link li a:hover::after {
+.navbar-list li a:hover::after {
   transform-origin: bottom left;
   transform: scaleX(1);
 }

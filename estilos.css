@@ -24,31 +24,26 @@ header {
   margin-top: 15px;
   list-style-type: none;
   display: flex;
-  gap: 100px;
+  gap: 45px;
 }
 
-.navbar {
+.navbar,
+.navbar-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
 }
 
-#menu-toggle,
-.menu-label {
-  display: none;
+.navbar-list li :first-child > a {
+  color: #1a86b1;
+  font-weight: 600;
 }
 
-.menu-icon {
-  width: 50px;
-  height: 50px;
-}
-
-/* #carro-toggle,
-.carro-label {
-  display: none;
-} */
-
-.carro-icon {
-  width: 80px;
-  height: 50px;
+.navbar-link {
+  text-decoration: none;
+  color: rgb(207, 196, 181);
+  font-weight: 500;
 }
 
 /* LOGO JAMONIA */
@@ -60,12 +55,6 @@ header {
   height: 250%;
   border-radius: 200px;
   box-shadow: 0px 5px 40px #3f86af;
-}
-
-.navbar-link {
-  text-decoration: none;
-  color: rgb(207, 196, 181);
-  font-weight: 500;
 }
 
 body {
@@ -296,6 +285,34 @@ main {
 .especialidades-quesos p {
   font-size: 17px;
   font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.especialidades-card-quesos-ir-carro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: ;
+}
+
+.especialidades-card-quesos-ir-carro a {
+  display: flex;
+  background: linear-gradient(to right, #dee520, #2feb4f);
+  width: 85%;
+  height: 35px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #090909;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.especialidades-card-quesos-ir-carro a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #257ea4;
 }
 
 /* ESPECIALIDADES FRACCIONADOS AL VACÍO */
@@ -420,6 +437,39 @@ main {
   padding-top: 15px;
   padding-bottom: 100px;
   margin-bottom: 50px;
+}
+
+.precio-agregar {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.precio-agregar p {
+  background: linear-gradient(to right, #dee520, #2feb4f);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.precio-agregar a {
+  background: linear-gradient(to right, #dee520, #2feb4f);
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #090909;
+}
+
+.precio-agregar a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #409790;
 }
 
 /* TERCERA SECCION PROMOCIONES */
@@ -739,8 +789,34 @@ main {
 }
 
 /* MENU HAMBURGUESA */
+.menu-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* .navbar img {
+  display: none;
+} */
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu-icon {
+  display: flex;
+}
+
+/* #menu-toggle:checked + .menu-icon {
+  display: flex;
+} */
 
 /* MENU CARRITO */
+.carro-icon {
+  width: 80px;
+  height: 50px;
+}
+
 .cart {
   position: absolute;
   top: 85px;
@@ -796,6 +872,8 @@ main {
   border-radius: 10px;
 }
 
+/* ESTILOS INFO PRODUCTOS CARRITO */
+
 .item-info {
   display: flex;
   flex-direction: column;
@@ -822,6 +900,8 @@ main {
   font-weight: 800;
 }
 
+/* ESTILOS MODIFICADIRES DE CANTIDAD DEL CARRITO */
+
 .item-handler {
   display: flex;
   align-items: center;
@@ -829,7 +909,7 @@ main {
   gap: 20px;
 }
 
-.quantity-handler {
+.item-handler {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -846,11 +926,15 @@ main {
 
 .quantity-handler-up {
   border: 2px solid #1a86b1;
+  cursor: pointer;
 }
 
 .quantity-handler-down {
   border: 2px solid #0d6692;
+  cursor: pointer;
 }
+
+/* DIVISION PARA PRECIO TOTAL */
 
 .divider {
   margin-top: 20px;
@@ -878,5 +962,5 @@ main {
 /*Toggle del carro*/
 #carro-toggle:checked + .cart {
   transform: translate(0%);
-  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+  transition: all 0.8s cubic-bezier(0.92, 0.01, 0.35, 0.99);
 }
