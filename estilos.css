@@ -823,10 +823,12 @@ main {
   right: 0;
   padding: 35px 30px;
   border-left: 3px solid #3f86af;
+  border-bottom: 3px solid #3f86af;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 200px);
   overflow-y: scroll;
   display: none;
   z-index: 2;
@@ -839,7 +841,7 @@ main {
 
 .cart h2 {
   color: #ecf0f2;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -957,6 +959,23 @@ main {
   color: #1a86b1;
   font-weight: 400;
   font-size: 30px;
+}
+
+.boton-compra a {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: rgb(224, 105, 200);
+  border-radius: 20px;
+}
+
+.boton-compra a {
+  color: #34050e;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 /*Toggle del carro*/
