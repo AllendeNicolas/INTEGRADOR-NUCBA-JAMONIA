@@ -17,7 +17,11 @@ header {
   box-shadow: 0 8px 24px rgba(44, 220, 243, 0.4);
   background-color: rgb(41, 41, 46);
   position: fixed;
-  width: 50%;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
 }
 
 .navbar ul {
