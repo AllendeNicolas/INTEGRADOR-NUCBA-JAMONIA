@@ -1,0 +1,24 @@
+/* MEDIAQUIRES CONSULTAS */
+
+@media (min-width: 375px) {
+  img {
+    width: 340px;
+  }
+
+  h1 {
+    display: none;
+  }
+  .contenedor {
+    width: 75%;
+  }
+
+  .volver-pagina {
+    width: 300px;
+  }
+}
+
+@media (min-width: 650px) {
+  .contenedor {
+    width: 500px;
+  }
+}

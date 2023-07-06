@@ -1,0 +1,38 @@
+/* MEDIA QUERIS INICIO SESIÓN */
+@media (min-width: 375px) {
+  img {
+    width: 360px;
+  }
+
+  .contenedor {
+    width: 75%;
+  }
+
+  .recordar-contraseña {
+    gap: 30%;
+  }
+
+  .recordar-contraseña label input {
+    margin-left: 40%;
+  }
+
+  .volver-pagina {
+    width: 80%;
+  }
+}
+
+@media (min-width: 414px) {
+  .recordar-contraseña {
+    gap: 2%;
+  }
+}
+
+@media (min-width: 650px) {
+  .contenedor {
+    width: 500px;
+  }
+
+  .volver-pagina {
+    width: 500px;
+  }
+}

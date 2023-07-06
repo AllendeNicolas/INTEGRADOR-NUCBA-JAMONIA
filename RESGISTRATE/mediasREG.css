@@ -1,0 +1,37 @@
+/* MEDIAQUERIS REGISTRO */
+@media (min-width: 375px) {
+  img {
+    width: 350px;
+  }
+
+  .contenedor {
+    width: 75%;
+  }
+
+  .terminos-condiciones label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .iniciar-sesion a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .volver-pagina {
+    width: 80%;
+  }
+}
+
+@media (min-width: 650px) {
+  .contenedor {
+    width: 500px;
+  }
+
+  .volver-pagina {
+    width: 500px;
+  }
+}

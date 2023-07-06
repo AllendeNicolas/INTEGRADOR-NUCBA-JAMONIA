@@ -819,6 +819,7 @@ main {
 .carro-icon {
   width: 80px;
   height: 50px;
+  cursor: pointer;
 }
 
 .cart {
